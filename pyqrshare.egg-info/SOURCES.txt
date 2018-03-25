@@ -1,0 +1,11 @@
+setup.py
+pyqrshare/__init__.py
+pyqrshare/command_line.py
+pyqrshare/fileToServe.py
+pyqrshare.egg-info/PKG-INFO
+pyqrshare.egg-info/SOURCES.txt
+pyqrshare.egg-info/dependency_links.txt
+pyqrshare.egg-info/entry_points.txt
+pyqrshare.egg-info/not-zip-safe
+pyqrshare.egg-info/requires.txt
+pyqrshare.egg-info/top_level.txt
