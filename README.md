@@ -4,7 +4,7 @@ This tool lets you share files and directories from your computer to your mobile
 ```$ pyqrshare "path/to/file/or/directory"```
 
 ## Installation
-```$ pip install pyqrshare```
+```$ python setup.py install```
 
 ### How it works
 If a file is provided, it simply serves it. If a directory path is provided, it zips the dir, stores it in the systems temporary directory and then serves it.
