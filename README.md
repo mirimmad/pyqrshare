@@ -1,5 +1,5 @@
 # PyQRShare 
-This tool lets you share files and directories from your computer to you mobile device by scanning a QR code right from the terminal.
+This tool lets you share files and directories from your computer to your mobile device by scanning a QR code right from the terminal.
 ## Usage
 ```$pyqrshare "path/to/file/or/directory"```
 
