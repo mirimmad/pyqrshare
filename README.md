@@ -11,7 +11,7 @@ You can also manually install it.
 ### How it works
 If a file is provided, it simply serves it. If a directory path is provided, it zips the dir, stores it in the systems temporary directory and then serves it.
 
-###C ontact
+### Contact
 ['E-mail'](mailto:mirimmad17@gmail.com)
 
 ### *NOTE*
