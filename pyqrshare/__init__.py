@@ -1,9 +1,13 @@
 import sys
+import re
 import netifaces as ni
 from flask import Flask, make_response, send_file
 import pyqrcode
 from . import fileToServe
 app = Flask(__name__, static_url_path='/')
+
+
+NET_REGEX = re.compile(r'(wlan|wlp|en)\d')
 
 
 def check_args():
@@ -17,9 +21,7 @@ def check_args():
 
 def return_wlan0_ip():
 	try:
-		wlan = next(filter(
-					lambda x: x.startswith("wlan") or x.startswith("wlp"),
-					ni.interfaces()))
+		wlan = next(filter(lambda x: NET_REGEX.match(x), ni.interfaces()))
 		ip = ni.ifaddresses(wlan)[ni.AF_INET][0]['addr']
 		return ip
 	except (KeyError, StopIteration):
