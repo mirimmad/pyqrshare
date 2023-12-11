@@ -16,10 +16,13 @@ def check_args():
 
 
 def return_wlan0_ip():
-	try: 
-		ip = ni.ifaddresses('wlan0')[ni.AF_INET][0]['addr']
+	try:
+		wlan = next(filter(
+					lambda x: x.startswith("wlan") or x.startswith("wlp"),
+					ni.interfaces()))
+		ip = ni.ifaddresses(wlan)[ni.AF_INET][0]['addr']
 		return ip
-	except KeyError:
+	except (KeyError, StopIteration):
 		sys.exit("Make sure you are connected to a WiFi network")
 
 
