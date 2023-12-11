@@ -1,0 +1,20 @@
+# Python compiled byte code
+*.pyc
+/build
+/dist
+
+# IDE files
+.idea
+*.iml
+*.ipr
+*.iws
+.settings
+.project
+.pydevproject
+.directory
+
+# Virtual environments
+venv*/
+.venv*/
+
+/.env

@@ -1,3 +1,5 @@
+LICENSE
+README.md
 setup.py
 pyqrshare/__init__.py
 pyqrshare/command_line.py

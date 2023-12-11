@@ -1,4 +1,4 @@
-Metadata-Version: 1.1
+Metadata-Version: 2.1
 Name: pyqrshare
 Version: 1.0
 Summary: Lets you transfer files and directories from your computer to your mobile device by scanning a QR code right from the terminal
@@ -6,9 +6,15 @@ Home-page: http://github.com/mirimmad/pyqrshare
 Author: Mir Immad
 Author-email: mirimmad17@gmail.com
 License: MIT
-Description: UNKNOWN
-Platform: UNKNOWN
 Classifier: Development Status :: Beta
 Classifier: License :: OSI Approved :: MIT License
-Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
 Classifier: Topic :: File Sharing :: QRCode
+License-File: LICENSE
+Requires-Dist: netifaces
+Requires-Dist: Flask
+Requires-Dist: pyqrcode
