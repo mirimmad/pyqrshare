@@ -29,13 +29,8 @@ def generate_qr():
 
 
 @app.route('/')
-def index():	
-	
-	response = make_response(send_file(fileToServe.FINAL_PATH, attachment_filename=sys.argv[1]))
-    	response.headers['Content-Disposition'] = 'attachment'
-    	return response
 def index():
-	response.headers['Content-Disposition'] = 'attachment'
+	response = make_response(send_file(sys.argv[1], as_attachment=True))
 	return response
 
 
