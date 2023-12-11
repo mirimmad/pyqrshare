@@ -24,7 +24,7 @@ def return_wlan0_ip():
 
 
 def generate_qr():
-	url = pyqrcode.create(str(return_wlan0_ip())+':5000')
+	url = pyqrcode.create('http://' + str(return_wlan0_ip()) + ':5000')
 	return url.terminal(quiet_zone=1)
 
 
