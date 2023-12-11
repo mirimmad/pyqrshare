@@ -11,11 +11,11 @@ NET_REGEX = re.compile(r'(wlan|wlp|en)\d')
 
 
 def check_args():
-	if(len(sys.argv)) == 1:
+	if len(sys.argv) == 1:
 		sys.exit("Provide a file/dir path")
-	elif(len(sys.argv)) == 2:
+	elif len(sys.argv) == 2:
 		fileToServe.set_file_to_serve(sys.argv[1])
-	elif(len(sys.argv)) > 2:
+	elif len(sys.argv) > 2:
 		sys.exit("Too many arguments")
 
 
